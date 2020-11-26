@@ -1,17 +1,12 @@
-import { Router } from "express";
+import { Request, Response, Router } from "express";
+import linksController from '../controllers/links'
 
 const router = Router();
 
-router.post("/links", (request, response) => {
-  response.send("POST");
-});
+router.post("/links", linksController.postLink);
 
-router.get("/links/:code", (request, response) => {
-  response.send("GET");
-});
+router.get("/links/:code", linksController.hitLink);
 
-router.get("/links/:code/stats", (request, response) => {
-  response.send("GET stats");
-});
+router.get("/links/:code/stats", linksController.getLink);
 
 export default router;
