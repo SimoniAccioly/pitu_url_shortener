@@ -10,6 +10,6 @@ console.log('Database running at 3306');
 //force para forçar a criação de tabelas no bd//só fazemos em abiente dev, enquanto estamos programando 
 
 
-app.listen(3000)
+app.listen(3001)
 console.log('Server running at 3000');
 
