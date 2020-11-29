@@ -8,7 +8,7 @@ import {
   Alert,
   Spinner,
 } from "react-bootstrap";
-import { ContentContainer, Form } from "./styles";
+import { ContentContainer, Form, AdsBlock } from "./styles";
 import ShortenerService from "../../services/ShortenerService";
 
 class HomePage extends React.Component {
@@ -99,6 +99,9 @@ class HomePage extends React.Component {
             )}
             {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
           </Form>
+        </ContentContainer>
+        <ContentContainer> 
+          <AdsBlock>Adesense</AdsBlock>
         </ContentContainer>
       </Container>
     );
